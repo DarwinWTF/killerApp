@@ -1,0 +1,49 @@
+Bob Loblaw beggining stuff
+Logo
+Quick start Guide to using Git and VScode
+
+Git is a Version Control System that uses magic to do cool stuff that enables the management and branch code develpment. Git uses the Snapshot model instead of the file based Delta model meaning Git thinks about its data more like a stream of snapshots. Instead of a collection of file changes.
+
+Visual Studio Code is a free, lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS and Linux. It has extensions for other programming languages and runtimes such as .NET, and clouds (such as AWS,Azure, and Google Cloud).
+
+vsCode is lightweight and starts quickly, Visual Studio Code has IntelliSense code completion for variables, methods and graphical debugging, multi-cursor editing, snazzy code navigation; It also has built-in source code control using Git. Much of this was adapted from Visual Studio technology.
+
+Setup:
+https://git-scm.com/downloads
+accept all defaults
+https://code.visualstudio.com/download#
+
+
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global init.defaultBranch master
+
+vsCode go to settings then search defaultBranchName
+
+Git primarily uses a command line interface resembling Dog commands:
+
+First time commands:
+1. Git init
+2. git remote add origin {repo-link}
+Common commands:
+1. git add .
+2. Git commit -m "descriptive message"
+3. git push -u origin BranchName (for new branch and 1st time push)
+
+to know what branch you are in -> git branch
+to create and switch to a new branch -> git checkout -b BranchName
+to know the status of files that have been changed -> git status
+
+Setup:
+
+
+Scenario 1
+"new to the team, how do I get connected to an ADO repo and start working"
+
+Scenario 2
+"Once I am connected how to do push my changes up thru Git"
+
+Scenario 3
+" I have an App i created locally, How do I push it up to a Repo"
+git remote add origin https://github.com/DarwinWTF/DemoA.git
+git push origin master
